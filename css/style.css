@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+   
+}
+/* nav bar */
+.navbar {
+    background-color: #ffff;
+  
+    padding: 5px 20px;
+}
+.navbar  img{
+    width: 80px;
+    height: 100%;
+    margin-right: 150px;
+}
+.navbar .navbar-brand{
+    margin-right: 150px;
+}
+ .navbar .collapse ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 2rem;
+    width: 80%;
+    
+ }
+ 
+ .navbar .collapse ul li:hover{
+   background-color: blueviolet;
+   border-radius: 6px;
+   border-bottom: 1px solid green;
+   transition: .5s;
+   transform: scale(1.2);
+ }
+ .navbar .collapse ul li a{
+    color: rgb(18, 24, 29);
+    font-weight: 900;
+ }
+ /* end nav bar */
+ /* main content */
+ .main-content{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(240, 245, 240);
+    position: relative;
+    padding: 50px 50px;
+
+
+ }
+ .main-content .animation {
+   
+   width: 50%;
+   height: 500px;   
+ }
+ .main-content .animation img{
+   width: 100%;
+   height: 500px;
+ }
+ .main-content .float-intro{
+    position: absolute;
+    top: 170px;
+    right: 100px;
+    width: 500px;
+   
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+ }
+ .main-content .float-intro .intro-card{
+   background-color: aliceblue;
+   margin-bottom: 15px;
+   padding: 10px;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 10px 10px 10px 2px black;
+   
+ }
+ .main-content .float-intro .intro-card h1{
+   color: brown;
+   text-align: center;
+ }
+ .main-content .float-intro .intro-card p{
+   font-size: 1.2rem;
+   text-align: end;
+   font-weight: 500;
+ }
+ 
+ /* end main content */
+ /* main footer */
+ footer{
+    width: 100%;
+    background-color: blue;
+    height: 165px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ footer .right {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    
+    width: 500px;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+ }
+ footer .right p{
+    font-size: 1.5rem;
+ }
+ footer  .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+ }
+ footer  .left p{
+    font-size: 1.5rem;
+    margin-left: 5px;
+ }
+ footer  .left .icn{
+    font-size: 3rem;
+ }
+ 
+ /* end main footer */
+ /* who us */
+ .who-us-content{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(251, 250, 252);
+    position: relative;
+    padding: 10px 50px;
+    direction: rtl;
+    padding: 50px 50px;
+ }
+ .who-us-content h1{
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    color: rgb(175, 111, 27);
+    font-weight: bolder;
+    font-family: system-ui;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(122, 103, 103);
+
+ }
+ .who-us-content p{
+    font-size: 2.5rem;
+ }
+ .who-us-content .serv-contain{
+   
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   gap: 5px;
+   margin-top: 20px;
+   height: 200px;
+ }
+ .who-us-content .serv-contain .serv-card{
+  
+   flex-basis: 15%;
+ }
+ .who-us-content .serv-contain .serv-card img{
+   width: 100px;
+   height: 100px;
+ }
+ .who-us-content .serv-contain .serv-card p{
+   font-size: 1.1rem;
+   font-weight: 600;
+ }
+ 
+ /* end who us */
+ /* our serv */
+ .our-serv-content{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(225, 213, 236);
+    position: relative;
+    padding: 10px 50px;
+    direction: rtl;
+    padding: 50px 50px;
+ }
+ .our-serv-content h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: chocolate;
+    text-align: center;
+ }
+ .our-serv-content h3{
+    margin-bottom: 2rem;
+    color: blue;
+ }
+ .our-serv-content ul{
+    font-size: 2rem;
+    color: rgb(66, 64, 55);
+
+ }
+ .our-serv-content ul li{
+    margin-bottom: 2rem;
+ }
+ /* end our serv */
+ /* portifolio */
+ 
+ .portifolio-content{
+   width: 100%;
+    
+   background-color: aliceblue;
+    position: relative;
+    padding: 10px 50px;
+    direction: rtl;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+ }
+ 
+ .portifolio-content .porti-card {
+   flex-basis: 20%;
+   height: 300px;
+   background-color: aqua;
+   transition: .5s;
+ }
+ .portifolio-content .porti-card:hover{
+   transform: scale(1.1);
+ }
+ .portifolio-content .porti-card img{
+   width: 100%;
+   height: 100%;
+    
+ }
+ .porti-head{
+   margin: 20PX;
+   text-align: center;
+ }
+ /* end portifolio */
